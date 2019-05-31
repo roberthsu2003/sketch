@@ -1,0 +1,47 @@
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5{
+    width: 100%;
+}
+
+@media (min-width:600px){
+    .c1{
+        width: 60%;
+        order: 2;
+    }
+
+    .c2{
+        width: 40%;
+        order: 1;
+    }
+
+    .c3 {
+        width:100%;
+        order: 3;
+    }
+    
+    .c4 {
+        width:100%;
+        order: 4;
+    }
+
+    .c5 {
+        width: 100%;
+        order: 5;
+    }
+
+}
+
+@media (min-width:960px){
+    .c2{
+        width: 20%;
+    }
+
+    .c3{
+        width: 20%;
+    }
+}

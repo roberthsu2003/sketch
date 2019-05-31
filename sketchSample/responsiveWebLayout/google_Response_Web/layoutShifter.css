@@ -1,0 +1,42 @@
+
+
+p.clearfix{
+    clear: both;
+}
+.mainContainer{
+    /*height:100vh*/
+    width:100%;
+}
+.leftContainer{
+    width:100%;
+    
+}
+.rightContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4 {
+    width: 100%;
+}
+
+@media(min-width:600px){
+    .leftContainer{
+        float:left;
+        width: 25%;
+        height:100vh;
+    }
+    .rightContainer{
+        width: 75%;
+        float:right
+    }
+}
+
+@media(min-width:1024px){
+    .mainContainer{
+        width:1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
